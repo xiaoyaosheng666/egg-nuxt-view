@@ -1,0 +1,60 @@
+{
+  "name": "egg-nuxt-view",
+  "version": "1.0.1",
+  "description": "nuxt.js plugin for egg",
+  "eggPlugin": {
+    "name": "nuxtView"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "nuxt",
+    "view"
+  ],
+  "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
+    "nuxt": "^2.8.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.16.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "ci": {
+    "version": "8, 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoyaosheng666/egg-nuxt-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaoyaosheng666/egg-nuxt-view/issues"
+  },
+  "homepage": "https://github.com/xiaoyaosheng666/egg-nuxt-view#readme",
+  "author": "",
+  "license": "MIT"
+}

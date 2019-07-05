@@ -1,0 +1,28 @@
+*.swp
+logs/
+*.log
+node_modules/
+package-lock.json
+yarn.lock
+coverage/
+.idea/
+run/
+.DS_Store
+*.sw*
+*.un~
+typings/
+.nyc_output/
+
+# build
+/dist
+.nuxt
+# local env files
+.env.local
+.env.*.local
+# Editor directories and files
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+

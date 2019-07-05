@@ -5,7 +5,7 @@
  * @member Config#nuxtjs
  * @property {String} SOME_KEY - see https://nuxtjs.org/guide/configuration
  */
-exports.nuxtView = {
+exports.nuxt = {
   mode: "universal",
   rootDir: "client",
   router: {

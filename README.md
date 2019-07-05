@@ -23,6 +23,7 @@
 <!--
 Description here.
 -->
+Nuxt.js plugin for egg
 
 ## Install
 
@@ -30,33 +31,45 @@ Description here.
 $ npm i egg-nuxt-view --save
 ```
 
-## Usage
+## 开启插件
 
 ```js
-// {app_root}/config/plugin.js
+// config/plugin.js
 exports.nuxtView = {
   enable: true,
-  package: 'egg-nuxt-view',
+  package: "egg-nuxt-view"
 };
 ```
 
-## Configuration
+## 使用场景
+
+- 将 Nuxt.js 作为中间件集成到 到 egg，渲染 UI 页面。默认渲染除 /api 开头的所有路由，支持配置渲染特定的路由，例如：/client 开头的所有路由
+- 默认 rootDir = client ,即在项目根目录下 创建 client 目录，目录下的内容同 Nuxt.js 项目目录结构。
+  可通过配置 router = { base: "/client" } 使 Nuxt.js 只渲染 /client 开头的路由，其他仍由 egg 的路由负责。
 
 ```js
-// {app_root}/config/config.default.js
-exports.nuxtView = {
+// config/config.default.js
+exports = {
+  nuxtView：{
+    rootDir: "client",
+    router: {
+      base: "/client"
+    }
+  }
 };
 ```
 
-see [Nuxt.js Config](https://zh.nuxtjs.org/guide/configuration) for more detail.
+## 详细配置
 
-## Example
+请到 [Nuxt.js Config](https://zh.nuxtjs.org/guide/configuration) 查看详细配置项说明。
 
-<!-- example here -->
+## 单元测试
 
-## Questions & Suggestions
+<!-- 描述如何在单元测试中使用此插件，例如 schedule 如何触发。无则省略。-->
 
-Please open an issue [here](https://github.com/xiaoyaosheng666/egg-nuxt-view/issues).
+## 提问交流
+
+请到 [egg-nuxt-view issues](https://github.com/xiaoyaosheng666/egg-nuxt-view/issues) 异步交流。
 
 ## License
 

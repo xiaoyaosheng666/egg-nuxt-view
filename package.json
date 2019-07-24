@@ -1,6 +1,6 @@
 {
   "name": "egg-nuxt-view",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "nuxt.js plugin for egg",
   "eggPlugin": {
     "name": "nuxtView"

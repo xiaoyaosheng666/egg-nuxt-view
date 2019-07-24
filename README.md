@@ -43,7 +43,7 @@ exports.nuxtView = {
 
 ## 使用场景
 
-- 将 Nuxt.js 作为中间件集成到 到 egg，渲染 UI 页面。默认渲染除 /api 开头的所有路由，支持配置渲染特定的路由，例如：/client 开头的所有路由
+- 将 Nuxt.js 作为中间件集成到 egg，渲染 UI 页面。默认渲染除 /api 开头的所有路由，支持配置渲染特定的路由，例如：/client 开头的所有路由
 - 默认 rootDir = client ,即在项目根目录下 创建 client 目录，目录下的内容同 Nuxt.js 项目目录结构。
   可通过配置 router = { base: "/client" } 使 Nuxt.js 只渲染 /client 开头的路由，其他仍由 egg 的路由负责。
 
